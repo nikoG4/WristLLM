@@ -1,0 +1,19 @@
+{
+  "name": "wristllm",
+  "version": "1.1.0",
+  "description": "Multi-provider LLM chat for Zepp OS wearables",
+  "main": "app.js",
+  "scripts": {
+    "check": "tsc -p jsconfig.json --noEmit",
+    "test": "npm run check"
+  },
+  "author": "nikoG4",
+  "license": "MIT",
+  "devDependencies": {
+    "@zeppos/device-types": "^3.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@zeppos/zml": "^0.0.9"
+  }
+}

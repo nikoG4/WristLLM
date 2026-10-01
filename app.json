@@ -1,0 +1,63 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 1088414,
+    "appName": "WristLLM",
+    "appType": "app",
+    "version": {
+      "code": 2,
+      "name": "1.1.0"
+    },
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "Multi-provider AI chat for Zepp OS wearables"
+  },
+  "side_service": {
+    "name": "index",
+    "js": "app-side/index.js"
+  },
+  "permissions": [
+    "data:os.device.info",
+    "device:os.local_storage"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.6.0",
+      "target": "3.6.0",
+      "minVersion": "3.6"
+    }
+  },
+  "debug": false,
+  "targets": {
+    "gt": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/gt/home/index.page"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "settings/index"
+        }
+      },
+      "platforms": [
+        {
+          "st": "r"
+        },
+        {
+          "st": "s"
+        }
+      ],
+      "designWidth": 480
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "WristLLM"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
